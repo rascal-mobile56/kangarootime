@@ -1,0 +1,34 @@
+<ion-header class="bar bar-header bar-balanced"> <a
+	href="#/settings"
+	class="button icon-left ion-arrow-left-c button-clear "
+></a>
+<h3 style="margin-left: 1%; line-height: 0px;">Add Guardian</h3>
+</ion-header>
+<div class="padding">
+
+	<ion-content class="content has-header ionic-pseudo">
+	<div ng-controller="relationShipController" style="padding-top: 100px;">
+
+		<div class="row">
+			<div class="col">
+				<label class="item item-input">
+                    <input type="email" ng-model="data.email" placeholder="Enter email of person you would like to add">
+				</label>
+			</div>
+		</div>
+	<!-- 	<div class="row">
+			<div class="col">
+				<label class="item item-input"> <input type="text"
+					ng-model="data.relationship"
+					placeholder="Relationship to account admin"
+				>
+				</label>
+			</div>
+		</div> -->
+
+		<div align="center" class="padding">
+			<button class="button button-violet" ng-click="btnRelationship(data)">Invite</button>
+		</div>
+
+	</div>
+</div>

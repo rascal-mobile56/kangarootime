@@ -1,0 +1,34 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.mss.kangarootimes"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.mss.kangarootimes"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.mss.kangarootimes"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.mss.kangarootimes"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.mss.kangarootimes"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.mss.kangarootimes"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "82359378169",
+            "PACKAGE_NAME": "com.mss.kangarootimes"
+        }
+    },
+    "dependent_plugins": {}
+}

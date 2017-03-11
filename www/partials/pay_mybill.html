@@ -1,0 +1,83 @@
+<ion-header class="bar bar-header bar-balanced">
+    <a href="#/billingMenus" class="button icon-left ion-arrow-left-c button-clear"></a>
+    <h3 style="margin-left: 1%; line-height: 0px;">Paid My Bill</h3>
+</ion-header>
+<div class="padding" ng-controller="payMyBillController">
+    <div style="height: 50px;"></div>
+    <ion-content class="content has-header ionic-pseudo">
+        <div ng-hide="hidePayBtn">
+            <div>
+                <div class="list" style="padding-top: 30px;"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div style="text-align: right" class="col">
+                <p class="hader_text">Center Name:</p>
+            </div>
+            <div class="col col-50">
+                <p class="hader_text">
+                    <span>{{center_name}}</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div style="text-align: right" class="col">
+                <p class="hader_text">Your Amount Due:</p>
+            </div>
+            <div class="col col-50">
+                <p class="hader_text">
+                    <span>
+                        <div class="main-dollar">
+                            <p class="dollar-sign">$</p>
+                            <input type="text" class="due-amount" value="{{duo_amount}}" ng-model="data.anyAmount" >
+                        </div>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div style="text-align: right" class="col">
+                <p class="hader_text">Pay My Bill :</p>
+            </div>
+            <div class="col col-50">
+                <p class="hader_text">
+                    <span>What data have to I?</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div style="text-align: right" class="col">
+                <p class="hader_text">Payment:</p>
+            </div>
+            <div class="col col-50">
+                <p class="hader_text">
+                    <span>{{message}}</span>
+                </p>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col col-50">
+                <button ng-hide="PayBtnCard" class="button button-violet ach-btn" ng-click="payNowAch(data)" >Pay Now Using ACH</button>
+            </div>
+            <div class="col col-50">
+                <button ng-hide="PayBtnCard" class="button button-violet ach-btn" ng-click="payNowCard(data)" >Pay Now Using Card</button>
+            </div>
+        </div>
+         -->
+
+        <div class="row">
+            <div class="col col-50">
+                <button ng-disabled="PayBtnAch" class="button button-violet ach-btn" ng-click="payNowAch(data)" >Pay Now Using ACH</button>
+            </div>
+            <div class="col col-50">
+                <button ng-disabled="PayBtnCard" class="button button-violet ach-btn" ng-click="payNowCard(data)" >Pay Now Using Card</button>
+            </div>
+        </div>
+</div>
+<div align="center" class="padding" ng-hide="!hidePayBtn">
+    <h3>{{no_Amount_Message}}</h3>
+</div>
+</div>
+</ion-content>
+
+
